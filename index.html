@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS</title>
+    <title>uHost</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;400;700&display=swap"
@@ -13,13 +13,38 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <section id="product-overview">
-      <h1>Get the freedom you deserve.</h1>
-    </section>
+    <header class="main-header">
+      <div>
+        <a href="index.html" class="main-header__brand"> uHost </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="packages/index.html">Packages</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="customers/index.html">Customers</a>
+          </li>
+          <li class="main-nav__item main-nav__item--cta">
+            <a href="start-hosting/index.html">Start Hosting</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <section>
-      <h1 class="section-title">Choose Your Plan</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quam perspiciatis beatae cupiditate est fuga aspernatur. Sapiente, laborum possimus. Et?</p>
-    </section>
+    <main>
+      <section id="product-overview">
+        <h1>Get the freedom you deserve.</h1>
+      </section>
+
+      <section>
+        <h1 class="section-title">Choose Your Plan</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quam
+          perspiciatis beatae cupiditate est fuga aspernatur. Sapiente, laborum
+          possimus. Et?
+        </p>
+      </section>
+    </main>
   </body>
 </html>
