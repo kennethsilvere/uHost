@@ -33,6 +33,7 @@ body {
   padding: 8px 16px;
   width: 100%;
   position: fixed;
+  top:0;
   z-index: 1;
 }
 
@@ -46,6 +47,12 @@ body {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
+  display: inline-block;
+  height: 32px;
+}
+
+.main-header__brand img {
+  height: 100%;
 }
 
 .main-nav {
@@ -95,7 +102,7 @@ body {
 
 .main-footer {
   background: black;
-  margin-top: 48px;
+  /* margin-top: 48px; */
   padding: 32px;
 }
 
