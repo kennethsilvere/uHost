@@ -1,5 +1,9 @@
+body {
+  overflow-x: hidden;
+}
+
 main {
-  padding-top: 43px;
+  padding-top: 2.7rem;
 }
 
 #product-overview {
@@ -12,9 +16,9 @@ main {
   background-origin: border-box;
   background-clip: border-box; */
   /* background-image: linear-gradient(100deg, purple, brown 30%); */
-  width: 100%;
-  height: 528px;
-  padding: 20px;
+  width: 100vw;
+  height: 55vh;
+  padding: 1.25rem;
 }
 
 #product-overview h1 {
@@ -40,9 +44,9 @@ main {
   display: inline-block;
   width: 30%;
   text-align: center;
-  padding: 16px;
+  padding: 1rem;
   background: #d5ffdc;
-  margin: 8px;
+  margin: 0.5rem;
   vertical-align: middle;
 }
 
@@ -55,7 +59,7 @@ main {
 .plan__annotation {
   background: white;
   color: #19b84c;
-  padding: 8px 0px;
+  padding: 0.5rem 0rem;
   border-radius: 8px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -83,19 +87,19 @@ main {
 }
 
 .plan__feature {
-  margin: 8px 0px;
+  margin: 0.5rem 0rem;
 }
 
 #key-features {
-  margin-top: 80px;
+  margin-top: 5rem;
   background: #ff1b68;
-  padding: 16px;
+  padding: 2rem;
   height: 400px;
 }
 
 #key-features .section-title {
   color: white;
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 .key-features__list {
@@ -115,7 +119,7 @@ main {
 
 .key-feature__description {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .key-feature__image {
@@ -125,5 +129,5 @@ main {
   border: 2px solid #424242;
   border-radius: 50%;
   margin: 0 auto;
-  padding: 24px;
+  padding: 1.5rem;
 }
