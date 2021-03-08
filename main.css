@@ -8,7 +8,7 @@ main {
 
 #product-overview {
   background: linear-gradient(to top, rgba(155, 62, 62, 0.5), transparent),
-    url("images/freedom.jpg") top left/cover no-repeat border-box, #ff1b68;
+    url('images/freedom.jpg') top left/cover no-repeat border-box, #ff1b68;
   /* background-image: url("freedom.jpg");
   background-position: top left;
   background-size: cover;
@@ -17,16 +17,19 @@ main {
   background-clip: border-box; */
   /* background-image: linear-gradient(100deg, purple, brown 30%); */
   width: 100vw;
-  height: 55vh;
+  height: 33vh;
   padding: 1.25rem;
+  position: relative;
 }
 
 #product-overview h1 {
   color: white;
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   margin: 0;
   position: absolute;
-  top: 80px;
+  bottom: 5%;
+  left: 3%;
+  font-size: 1.6rem;
 }
 
 .section-title {
@@ -35,25 +38,27 @@ main {
 }
 
 .plans__list {
-  width: 80%;
-  margin: 0 auto;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+  width: 100%;
   text-align: center;
 }
 
 .plan {
-  display: inline-block;
-  width: 30%;
+  /* display: inline-block; */
+  /* width: 30%; */
+  /* vertical-align: middle; */
+  width: 90%;
+  margin: 1rem auto;
   text-align: center;
   padding: 1rem;
   background: #d5ffdc;
-  margin: 0.5rem;
-  vertical-align: middle;
 }
 
 .plan--highlighted {
+  /* box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.5); */
   background: #19b84c;
   color: white;
-  box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .plan__annotation {
@@ -91,10 +96,10 @@ main {
 }
 
 #key-features {
+  /* height: 400px; */
   margin-top: 5rem;
   background: #ff1b68;
   padding: 2rem;
-  height: 400px;
 }
 
 #key-features .section-title {
@@ -111,10 +116,10 @@ main {
 }
 
 .key-feature {
-  display: inline-block;
-  width: 30%;
-  text-align: center;
-  vertical-align: top;
+  /* display: inline-block; */
+  /* width: 30%; */
+  /* vertical-align: top; */
+  margin: 5rem 0;
 }
 
 .key-feature__description {
@@ -179,4 +184,62 @@ main {
 .modal__action--negative:active {
   background: #ff5454;
   border-color: #ff5454;
+}
+
+@media (min-width: 768px) {
+  /* >= 768px // Medium device breakpoint that Bootstrap uses */
+
+  .plans__list {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .plan {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    border-radius: 0;
+    min-width: 13rem;
+    max-width: 25rem;
+  }
+
+  .plan--highlighted {
+    box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  #key-features {
+    max-height: 400px;
+  }
+
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 0;
+    max-width: 25rem;
+  }
+}
+
+@media (min-width: 40rem) and (min-height: 60rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 20%;
+  }
+
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* >= 1400px // Extra extra large device breakpoint that Bootstrap uses */
+  /* #product-overview {
+    height: 65vh;
+    background-position: 50% 25%;
+  }
+
+  #product-overview h1 {
+    font-size: 4rem;
+  } */
 }

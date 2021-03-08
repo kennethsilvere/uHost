@@ -3,8 +3,12 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
+}
+
+main {
+  min-height: calc(100vh - 56px);
 }
 
 .backdrop {
@@ -76,13 +80,13 @@ body {
 }
 
 .main-header__brand {
-  font-size: 1.37rem;
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  height: 2rem;
+  height: 2.5rem;
   vertical-align: middle;
+  margin: 0 1rem;
 }
 
 .main-header__brand img {
@@ -90,10 +94,7 @@ body {
 }
 
 .main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 122px);
-  vertical-align: middle;
+  display: none;
 }
 
 .main-nav__items {
@@ -168,7 +169,7 @@ body {
 
 .main-footer {
   background: black;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 .main-footer__links {
@@ -179,8 +180,8 @@ body {
 }
 
 .main-footer__link {
-  display: inline-block;
-  margin: 0rem 1rem;
+  display: block;
+  margin: 1rem 0rem;
 }
 
 .main-footer__link a {
@@ -195,4 +196,30 @@ body {
 
 .open {
   display: block !important;
+}
+
+@media (min-width: 768px) {
+  /* >= 768px // Medium device breakpoint that Bootstrap uses */
+
+  .toggle-button {
+    display: none;
+  }
+
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 70px);
+  }
+  .main-header__brand {
+    margin: 0;
+  }
+
+  .main-footer {
+    padding: 2rem;
+  }
+
+  .main-footer__link {
+    display: inline-block;
+    margin: 0rem 1rem;
+  }
 }
