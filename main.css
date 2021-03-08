@@ -2,10 +2,6 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  padding-top: 2.7rem;
-}
-
 #product-overview {
   background: linear-gradient(to top, rgba(155, 62, 62, 0.5), transparent),
     url('images/freedom.jpg') top left/cover no-repeat border-box, #ff1b68;

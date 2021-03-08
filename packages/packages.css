@@ -35,13 +35,13 @@ main {
 
 .package__badge {
   position: absolute;
-  margin: 1.25rem;
+  margin: 0.8rem;
   top: 0;
   right: 0;
   padding: 0.5rem;
   color: white;
   background: #ff5454;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
 }
 
 .package__subtitle {
@@ -92,6 +92,10 @@ main {
   main {
     margin: 3rem auto;
     max-width: 1500px;
+  }
+  .package__badge {
+    margin: 1.25rem;
+    font-size: 1.3rem;
   }
 }
 
