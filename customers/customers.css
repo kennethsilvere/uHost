@@ -63,20 +63,15 @@
 @media (min-width: 768px) {
   .testimonial {
     max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   .testimonial__image-container {
-    display: inline-block;
     width: 65%;
     max-width: 580px;
-    vertical-align: middle;
   }
   .testimonial__info {
-    text-align: right;
-    padding: 0.9rem;
-    display: inline-block;
-    vertical-align: middle;
     width: 30%;
   }
 }
