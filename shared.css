@@ -1,17 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;400;700&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;400;700&family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 3.5rem auto fit-content(8rem);
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
 main {
-  min-height: calc(100vh - 56px - 3.5rem);
-  margin-top: 3.5rem;
+  /* min-height: calc(100vh - 56px - 3.5rem); */
+  /* margin-top: 3.5rem; */
+  grid-area: main;
 }
 
 .backdrop {
@@ -84,12 +96,12 @@ main {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  vertical-align: middle;
   margin: 0 1rem;
 }
 
 .main-header__brand img {
   height: 2.5rem;
+  vertical-align: middle;
 }
 
 .main-nav {
@@ -171,7 +183,7 @@ main {
 
 .main-footer {
   background: black;
-  padding: 0.5rem;
+  grid-area: footer;
 }
 
 .main-footer__links {
