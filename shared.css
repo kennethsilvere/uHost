@@ -265,9 +265,14 @@ main {
   margin: 0.5rem 0rem;
 }
 
+.main-footer__link:last-of-type {
+  margin-bottom: 2rem;
+}
+
 .main-footer__link a {
   color: white;
   text-decoration: none;
+  font-size: 0.8rem;
 }
 
 .main-footer__link a:hover,
@@ -315,6 +320,13 @@ main {
 
   .main-footer__link {
     margin: 0rem 1rem;
+  }
+
+  .main-footer__link:last-of-type {
+    margin-bottom: 0;
+  }
+  .main-footer__link a {
+    font-size: 1rem;
   }
 }
 
